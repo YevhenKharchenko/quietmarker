@@ -1,0 +1,89 @@
+.privacy-body {
+  .header {
+    background: #080f20;
+  }
+
+  .header-bg-wrapper {
+    background-image: none;
+  }
+}
+
+.policy-section {
+  background: radial-gradient(50% 50% at 50% 50%, #104b83 0%, #080f20 100%);
+  padding-top: 126px;
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    padding-top: 137px;
+    padding-bottom: 100px;
+  }
+}
+
+.policy-main-title {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffc83d;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f8f9ff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f8f9ff;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.policy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.policy-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f8f9ff;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.policy-span {
+  font-weight: 700;
+}
+
+.policy-link {
+  font-weight: 700;
+}

@@ -1,0 +1,130 @@
+.cookie-banner-section {
+  background: #ffc83d;
+  padding: 38px 16px 74px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    padding: 20px 28px;
+    max-width: 1440px;
+  }
+}
+
+.cookie-banner-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cookie-banner-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(16, 75, 131) 0%,
+    rgb(8, 15, 32) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    max-width: 595px;
+    margin-bottom: 0;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+
+.cookie-accept-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(50% 50% at 50% 50%, #104b83 0%, #080f20 100%);
+  border-radius: 40px;
+  padding: 24px 32px;
+  width: 100%;
+  max-width: 295px;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.cookie-accept-btn-span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffc83d;
+
+  @include media(desktop) {
+  }
+}
+
+.cookie-decline-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #080f20;
+  border-radius: 40px;
+  padding: 23px 31px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(16, 75, 131) 0%,
+    rgb(8, 15, 32) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  max-width: 295px;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.show-cookie-banner {
+  display: block;
+}
