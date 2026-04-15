@@ -16,7 +16,7 @@ gameplaySwiper = new Swiper('.gameplay-swiper-container', {
   grabCursor: true,
   breakpoints: {
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 6,
       centeredSlides: false,
       allowTouchMove: false,
       grabCursor: false,

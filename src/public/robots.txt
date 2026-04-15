@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://northgrain.online/sitemap.xml
+Sitemap: https://quietmarker.space/sitemap.xml

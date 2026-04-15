@@ -8,10 +8,17 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/about/about-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 200px center;
+  background-size: auto;
+  mix-blend-mode: lighten;
 
   @include media(desktop) {
-    padding-top: 150px;
+    padding-top: 186px;
     max-width: 1440px;
+    background-image: url(../img/about/about-bg-desk.png);
+    background-position: top 160px left 40px;
   }
 }
 
@@ -28,8 +35,8 @@
 
 .about-text-wrapper {
   @include media(desktop) {
-    max-width: 522px;
-    margin-left: 108px;
+    max-width: 630px;
+    margin-left: auto;
   }
 }
 
@@ -42,36 +49,24 @@
 .about-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 22px;
-
-  @include media(desktop) {
-    margin: 0;
-    min-width: 353px;
-    position: absolute;
-    top: 0;
-    right: 168px;
-  }
-}
-
-.about-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  color: #f8f9ff;
   margin-bottom: 16px;
 
   @include media(desktop) {
-    text-align: left;
+    margin: 0;
+    min-width: 330px;
+    position: absolute;
+    top: 0;
+    left: 174px;
   }
 }
 
 .about-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f8f9ff;
+  text-transform: uppercase;
+  color: #97abdd;
 
   @include media(desktop) {
   }

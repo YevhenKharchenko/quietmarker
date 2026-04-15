@@ -11,7 +11,7 @@
   overflow: hidden;
 
   @include media(desktop) {
-    padding-top: 150px;
+    padding-top: 160px;
     max-width: 1440px;
   }
 }
@@ -42,10 +42,6 @@
 
 .gallery-swiper-wrapper {
   @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
   }
 }
 

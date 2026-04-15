@@ -31,7 +31,7 @@ function onCloseContextButtonClick() {
   menuBtn.classList.remove('closed');
   headerWrapper.classList.remove('header-bg-wrapper-context');
   header.classList.remove('header-context');
-  header.style.background = '#080f20';
+  header.style.background = '#171035';
 
   contextMenu.removeEventListener('click', onContextMenuLinkClick);
   closeContextBtn.removeEventListener('click', onCloseContextButtonClick);

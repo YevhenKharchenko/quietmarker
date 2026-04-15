@@ -1,12 +1,12 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-const featuresLeftArrow = document.getElementById('featuresLeftArrow');
-const featuresRightArrow = document.getElementById('featuresRightArrow');
+const galleryLeftArrow = document.getElementById('galleryLeftArrow');
+const galleryRightArrow = document.getElementById('galleryRightArrow');
 
-let featuresSwiper;
+let gallerySwiper;
 
-featuresSwiper = new Swiper('.features-swiper-container', {
+gallerySwiper = new Swiper('.gallery-swiper-container', {
   direction: 'horizontal',
   loop: false,
   centeredSlides: true,
@@ -26,34 +26,32 @@ featuresSwiper = new Swiper('.features-swiper-container', {
 
   on: {
     init(swiper) {
-      document
-        .querySelector('.features-swiper-container')
-        .classList.add('show');
-      updateFeaturesArrows(swiper);
+      document.querySelector('.gallery-swiper-container').classList.add('show');
+      updateGalleryArrows(swiper);
     },
     slideChange(swiper) {
-      updateFeaturesArrows(swiper);
+      updateGalleryArrows(swiper);
     },
     reachEnd(swiper) {
-      featuresRightArrow.disabled = true;
+      galleryRightArrow.disabled = true;
     },
     fromEdge(swiper) {
-      featuresRightArrow.disabled = false;
+      galleryRightArrow.disabled = false;
     },
   },
 });
 
-updateFeaturesArrows(featuresSwiper);
+updateGalleryArrows(gallerySwiper);
 
-function updateFeaturesArrows(swiper) {
-  featuresLeftArrow.disabled = swiper.isBeginning;
-  featuresRightArrow.disabled = swiper.isEnd;
+function updateGalleryArrows(swiper) {
+  galleryLeftArrow.disabled = swiper.isBeginning;
+  galleryRightArrow.disabled = swiper.isEnd;
 }
 
-featuresLeftArrow.addEventListener('click', () => {
-  featuresSwiper.slidePrev();
+galleryLeftArrow.addEventListener('click', () => {
+  gallerySwiper.slidePrev();
 });
 
-featuresRightArrow.addEventListener('click', () => {
-  featuresSwiper.slideNext();
+galleryRightArrow.addEventListener('click', () => {
+  gallerySwiper.slideNext();
 });
