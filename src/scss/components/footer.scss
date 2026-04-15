@@ -1,5 +1,5 @@
 .footer {
-  background: #ffc83d;
+  background: #ff9f1c;
   padding-top: 34px;
   padding-bottom: 34px;
 
@@ -37,20 +37,16 @@
 .footer-link {
   display: flex;
   align-items: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(16, 75, 131) 0%,
-    rgb(8, 15, 32) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #171035;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
+    font-size: 18px;
   }
 
   &:hover,
@@ -59,18 +55,11 @@
 }
 
 .footer-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(16, 75, 131) 0%,
-    rgb(8, 15, 32) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #171035;
 
   @include media(desktop) {
     text-align: center;

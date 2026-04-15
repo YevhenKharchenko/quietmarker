@@ -4,19 +4,19 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 84px;
-  padding-bottom: 334px;
+  padding-top: 142px;
+  padding-bottom: 64px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/hero/hero-bg-mob.png);
+  background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto;
 
   @include media(desktop) {
-    padding-top: 228px;
-    padding-bottom: 344px;
+    padding-top: 254px;
+    padding-bottom: 231px;
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
   }
@@ -29,53 +29,18 @@
 
 .hero-content-wrapper {
   @include media(desktop) {
+    max-width: max-content;
   }
 }
 
-.hero-title-wrapper {
-  margin-bottom: 20px;
+.hero-title-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 416px;
 
   @include media(desktop) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 36px;
-  }
-}
-
-.hero-title {
-  font-family: 'Lilita One', sans-serif;
-  font-weight: 400;
-  font-size: 76px;
-  line-height: 1.2;
-  text-align: center;
-  color: #ffc83d;
-
-  @include media(desktop) {
-    font-size: 146px;
-  }
-}
-
-.hero-btn-wrapper {
-  @include media(desktop) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.hero-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 34px;
-  text-align: center;
-  color: #f8f9ff;
-  margin-bottom: 36px;
-
-  @include media(desktop) {
-    font-size: 34px;
-    text-align: left;
-    margin-bottom: 0;
+    margin: 0;
+    margin-bottom: 62px;
   }
 }
 
@@ -88,6 +53,5 @@
   margin-right: auto;
 
   @include media(desktop) {
-    margin: 0;
   }
 }

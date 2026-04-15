@@ -1,5 +1,5 @@
 .cookie-banner-section {
-  background: #ffc83d;
+  background: #ff9f1c;
   padding: 38px 16px 74px;
   width: 100%;
   max-width: 375px;
@@ -27,19 +27,12 @@
 }
 
 .cookie-banner-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(16, 75, 131) 0%,
-    rgb(8, 15, 32) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #171035;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -66,9 +59,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(50% 50% at 50% 50%, #104b83 0%, #080f20 100%);
+  background: #171035;
   border-radius: 40px;
   padding: 24px 32px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ff9f1c;
   width: 100%;
   max-width: 295px;
   transition: background 0.3s ease-in-out;
@@ -83,11 +81,6 @@
 }
 
 .cookie-accept-btn-span {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffc83d;
-
   @include media(desktop) {
   }
 }
@@ -96,20 +89,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #080f20;
+  border: 1px solid #171035;
   border-radius: 40px;
   padding: 23px 31px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(16, 75, 131) 0%,
-    rgb(8, 15, 32) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #171035;
   width: 100%;
   max-width: 295px;
   transition:

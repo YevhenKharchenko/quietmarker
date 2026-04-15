@@ -2,31 +2,39 @@
   <div class="hero-bg-wrapper">
     <div class="container hero-container">
       <div class="hero-content-wrapper">
-        <div class="hero-title-wrapper">
-          <h1 class="hero-title">Screw</h1>
-          <h1 class="hero-title">Puzzle</h1>
-        </div>
-        <div class="hero-btn-wrapper">
-          <p class="hero-subtitle">
-            Think first.<br />
-            Unscrew smart
-          </p>
-          <a
-            class="hero-btn"
-            target="_blank"
-            href="https://play.google.com/store/apps/details?id=com.skulltreasures.match3&hl=en&gl=us"
-            rel="noopener noreferrer"
-            aria-label="Download on Google Play"
-          >
-            <img
-              class="hero-play-img"
-              src="./img/hero/hero-play-img.png"
-              alt="Google Play"
-              width="243"
-              height="70"
-            />
-          </a>
-        </div>
+        <picture>
+          <source
+            srcset="./img/hero/hero-title-desk.png"
+            media="(min-width: 1440px)"
+            width="630"
+            height="203" />
+          <source
+            srcset="./img/hero/hero-title-mob.png"
+            width="335"
+            height="108" />
+          <img
+            class="hero-title-img"
+            src="./img/hero/hero-title-mob.png"
+            alt="Title"
+            width="335"
+            height="108"
+            loading="lazy"
+        /></picture>
+        <a
+          class="hero-btn"
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=com.catchup.ball.goingball&hl=en&gl=us"
+          rel="noopener noreferrer"
+          aria-label="Download on Google Play"
+        >
+          <img
+            class="hero-play-img"
+            src="./img/hero/hero-play-img.png"
+            alt="Google Play"
+            width="243"
+            height="70"
+          />
+        </a>
       </div>
     </div>
   </div>

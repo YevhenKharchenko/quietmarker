@@ -1,5 +1,5 @@
 .context-menu {
-  background: radial-gradient(50% 50% at 50% 50%, #104b83 0%, #080f20 100%);
+  background: #171035;
   display: none;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 36px;
+  gap: 34px;
 }
 
 .context-list-item {
@@ -36,11 +36,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f8f9ff;
+  text-transform: uppercase;
+  color: #97abdd;
   transition:
     color 0.3s ease-in-out,
     background 0.3s ease-in-out;

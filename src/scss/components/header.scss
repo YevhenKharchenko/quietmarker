@@ -1,5 +1,5 @@
 .header {
-  background: #080f20;
+  background: #171035;
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,10 +19,10 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/hero/hero-bg-mob.png);
+  background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: auto;
 
   @include media(desktop) {
     padding: 16px 0;
@@ -46,9 +46,6 @@
   justify-content: end;
 
   @include media(desktop) {
-    border: 1px solid #ffc83d;
-    border-radius: 20px;
-    padding: 11px 15px;
     justify-content: start;
   }
 }
@@ -65,11 +62,12 @@
 }
 
 .nav-list-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f8f9ff;
+  text-transform: uppercase;
+  color: #97abdd;
   display: flex;
   justify-content: center;
   align-items: center;
